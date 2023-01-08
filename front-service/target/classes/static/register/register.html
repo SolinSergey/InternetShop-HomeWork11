@@ -1,0 +1,40 @@
+<div>
+    <p></p>
+    <h1>March Market</h1>
+    <p>Форма регистрации</p>
+    <br>
+    <form class="align-middle" ng-submit="register()">
+        <div class="input-group input-group-sm" style="padding: 4px;">
+            <table>
+                <tr>
+                    <td>Введите имя пользователя:</td>
+                    <td><input id="navLoginField" class="form-control" ng-model="userdata.username" type="text"
+                               aria-describedby="inputGroup-sizing-sm" style="margin-left: 10px;"></td>
+                </tr>
+                <tr>
+                    <td>Введите пароль:</td>
+                    <td><input id="navPasswordField" class="form-control" ng-model="userdata.password" type="password"
+                               aria-describedby="inputGroup-sizing-sm" style="margin-left: 10px;"></td>
+                </tr>
+                <tr>
+                    <td>Повторите пароль:</td>
+                    <td><input id="navConfirmPasswordField" class="form-control" ng-model="userdata.confirmPassword"
+                               type="password"
+                               aria-describedby="inputGroup-sizing-sm" style="margin-left: 10px;"></td>
+                </tr>
+                <tr>
+                    <td>Введите email:</td>
+                    <td><input id="navEmailField" class="form-control" ng-model="userdata.email" type="text"
+                               aria-describedby="inputGroup-sizing-sm" style="margin-left: 10px;"></td>
+                </tr>
+
+                <tr>
+                    <td><br></td>
+                </tr>
+            </table>
+        </div>
+        <button id="navLoginSubmit" class="btn btn-outline-warning btn-sm"
+                style="margin-left: 10px;" type="submit">Зарегистрировать
+        </button>
+    </form>
+</div>
